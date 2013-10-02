@@ -47,4 +47,15 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>qlzq-releases</id>
+            <url>http://10.29.20.209:8080/nexus/content/repositories/qlzq-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>qlzq-snapshots</id>
+            <url>http://10.29.20.209:8080/nexus/content/repositories/qlzq-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
