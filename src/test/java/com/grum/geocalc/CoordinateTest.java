@@ -12,10 +12,11 @@
 
 package com.grum.geocalc;
 
-import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -27,7 +28,7 @@ import static org.junit.Assert.assertTrue;
  */
 public class CoordinateTest {
 
-    final Logger logger = Logger.getLogger(getClass());
+    final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Test
     public void testDegreeCoordinate() {

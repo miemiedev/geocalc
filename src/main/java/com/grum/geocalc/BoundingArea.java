@@ -13,7 +13,8 @@
 package com.grum.geocalc;
 
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Represents an area, defined by its top left and bottom right
@@ -22,7 +23,7 @@ import org.apache.log4j.Logger;
  * @author rgallet
  */
 public class BoundingArea {
-    Logger logger = Logger.getLogger(getClass());
+    Logger logger = LoggerFactory.getLogger(getClass());
     private Point northEast, southWest;
     private Point southEast, northWest;
 
